@@ -2,20 +2,63 @@
 <html lang="pl-PL">
 <head>
     <meta charset="utf-8">
-    <title>Tu będzie Tabela</title>
+    <title>Dane komputerowe</title>
     <style>
         body {
-            background-color: #f0e68c; /* jasnożółte tło */
+            background-color: #000;
             font-family: Arial, sans-serif;
             text-align: center;
-            padding-top: 50px;
+            padding-top: 30px;
         }
 
         h1 {
-            color: #8b4513; /* ciemnobrązowy nagłówek */
+            color: black;
+            background-color: #7a3db8;
+            padding: 10px;
+            margin: 0 auto 20px;
+            width: 90%;
         }
 
-        /* Styl linku powrotu w lewym dolnym rogu */
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 90%;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #ffd400;
+            color: black;
+        }
+
+        .ram1 { background-color: #2ecc71; }
+        .ram2 { background-color: #e74c3c; }
+        .ram3 { background-color: #3498db; }
+        .ram4 { background-color: #c0392b; }
+        .ram5 { background-color: #1abc9c; }
+        .ram6 { background-color: #27ae60; }
+        .ram7 { background-color: #8e44ad; }
+        .ram8 { background-color: #7f8c8d; }
+
+        .napiecie { background-color: red; }
+        .kanal { background-color: darkred; }
+
+        .footer {
+            background-color: #7a3db8;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .powrot {
             position: fixed;
             bottom: 10px;
@@ -27,17 +70,99 @@
             padding: 5px 10px;
             border-radius: 5px;
         }
-
-        .powrot:hover {
-            background-color: #a0522d;
-        }
     </style>
 </head>
 <body>
 
-    <h1>Tu będzie Tabela</h1>
+<h1>Dane komputerowe – Konrad Jankowski 2Fg1</h1>
 
-    <a href="menu.html" class="powrot">Powrót do menu</a>
+<table>
+    <tr>
+        <th>Model RAM</th>
+        <th>Typ pamięci</th>
+        <th>Taktowanie bazowe</th>
+        <th>Pojemność</th>
+        <th>Opóźnienia (CL)</th>
+        <th>Napięcie</th>
+        <th>Kanał</th>
+    </tr>
+    <tr class="ram1">
+        <td>DDR4 3200 HyperX</td>
+        <td>DDR4</td>
+        <td>3200 MHz</td>
+        <td>8 GB</td>
+        <td>CL16</td>
+        <td class="napiecie">1.35 V</td>
+        <td class="kanal">Dual</td>
+    </tr>
+    <tr class="ram2">
+        <td>DDR4 3600 Vengeance</td>
+        <td>DDR4</td>
+        <td>3600 MHz</td>
+        <td>16 GB</td>
+        <td>CL18</td>
+        <td class="napiecie">1.35 V</td>
+        <td class="kanal">Dual</td>
+    </tr>
+    <tr class="ram3">
+        <td>DDR5 5200 Fury</td>
+        <td>DDR5</td>
+        <td>5200 MHz</td>
+        <td>16 GB</td>
+        <td>CL40</td>
+        <td class="napiecie">1.25 V</td>
+        <td class="kanal">Dual</td>
+    </tr>
+    <tr class="ram4">
+        <td>DDR5 6000 Trident Z</td>
+        <td>DDR5</td>
+        <td>6000 MHz</td>
+        <td>32 GB</td>
+        <td>CL36</td>
+        <td class="napiecie">1.35 V</td>
+        <td class="kanal">Dual</td>
+    </tr>
+    <tr class="ram5">
+        <td>DDR4 3000 Aegis</td>
+        <td>DDR4</td>
+        <td>3000 MHz</td>
+        <td>8 GB</td>
+        <td>CL16</td>
+        <td class="napiecie">1.2 V</td>
+        <td class="kanal">Single</td>
+    </tr>
+    <tr class="ram6">
+        <td>DDR4 3200 Ballistix</td>
+        <td>DDR4</td>
+        <td>3200 MHz</td>
+        <td>16 GB</td>
+        <td>CL16</td>
+        <td class="napiecie">1.35 V</td>
+        <td class="kanal">Dual</td>
+    </tr>
+    <tr class="ram7">
+        <td>DDR5 6400 Dominator</td>
+        <td>DDR5</td>
+        <td>6400 MHz</td>
+        <td>32 GB</td>
+        <td>CL38</td>
+        <td class="napiecie">1.4 V</td>
+        <td class="kanal">Dual</td>
+    </tr>
+    <tr class="ram8">
+        <td>DDR5 5600 Ripjaws</td>
+        <td>DDR5</td>
+        <td>5600 MHz</td>
+        <td>16 GB</td>
+        <td>CL40</td>
+        <td class="napiecie">1.25 V</td>
+        <td class="kanal">Dual</td>
+    </tr>
+</table>
+
+<div class="footer">Dane komputerowe</div>
+
+<a href="menu.html" class="powrot">Powrót do menu</a>
 
 </body>
 </html>
