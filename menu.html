@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="utf-8">
+    <title>Menu – Jankowski</title>
+    <style>
+        body {
+            background-color: #e6e6fa; /* jasny fiolet */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        fieldset {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f0ff; /* lekko jaśniejsze fioletowe tło */
+            border-radius: 10px;
+            border: 2px solid #9370db; /* fioletowe obramowanie */
+        }
+
+        h2 {
+            color: #6a0dad; /* ciemny fiolet */
+            margin-bottom: 20px;
+        }
+
+        /* Styl dla linków menu */
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu li {
+            text-align: center;
+        }
+
+        .menu img {
+            width: 100px; 
+            height: 100px;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            border: 2px solid #6a0dad; /* obramowanie obrazków fioletowe */
+        }
+
+        .menu a {
+            font-size: 20px;
+            text-decoration: none;
+            color: #4b0082; /* indygo/fiolet dla linków */
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            color: #8a2be2; /* jaśniejszy fiolet przy hover */
+        }
+
+        /* Link powrotu w lewym dolnym rogu */
+        .powrot {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            background-color: #6a0dad; /* ciemny fiolet */
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .powrot:hover {
+            background-color: #8a2be2; /* jaśniejszy fiolet */
+        }
+    </style>
+</head>
+<body>
+
+    <fieldset>
+        <h2>Menu nawigacyjne</h2>
+
+        <ul class="menu">
+            <li>
+                <img src="https://img.redro.pl/obrazy/ikona-poczty-e-mail-700-151798118.jpg" alt="Poczta">
+                <a href="poczta.html">Poczta</a>
+            </li>
+            <li>
+                <img src="https://www.shutterstock.com/image-vector/analytical-data-grid-line-icon-600nw-2409998285.jpg" alt="Tabela">
+                <a href="tabela.html">Tabela</a>
+            </li>
+            <li>
+                <img src="https://img.redro.pl/plakaty/dokument-ikona-400-194754827.jpg" alt="Arkusz">
+                <a href="formularz.html">Formularz</a>
+            </li>
+        </ul>
+
+    </fieldset>
+
+    <a href="index.html" class="powrot">Powrót</a>
+
+</body>
+</html>
